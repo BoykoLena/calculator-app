@@ -141,15 +141,20 @@ function deleteLeft() {
   if (results.innerHTML === "") {
     let variables = document.querySelector(".variables").childNodes;
     for (let i = 1; i < 4; i++) {
-      if (variables[i].innerHTML === "") {
-        variables[i - 1].innerHTML = variables[i - 1].innerHTML.slice(0, -1);
-        a.innerHTML = variables[i - 1].innerHTML;
+      if (variables[1].innerHTML === "") {
+        deleteAll();
         break;
-      } else {
-        if (i > 2) {
-          variables[i].innerHTML = variables[i].innerHTML.slice(0, -1);
-          break;
+      }
+      if (variables[i].innerHTML === "") {
+        if (i === 3) {
+          a = document.querySelector("#firstVariable");
         }
+        variables[i - 1].innerHTML = variables[i - 1].innerHTML.slice(0, -1);
+        break;
+      }
+      if (variables[3].innerHTML != "") {
+        variables[3].innerHTML = variables[3].innerHTML.slice(0, -1);
+        break;
       }
     }
   } else {
