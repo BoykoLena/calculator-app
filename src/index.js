@@ -9,11 +9,15 @@ function writeNumber(elem) {
   if (typeof a != "number") {
     if (a.innerHTML.length < 10) {
       a.innerHTML = `${a.innerHTML}${elem}`;
+    } else {
+      alert("You can't enter more than 10 number");
     }
     console.log(a.innerHTML.length);
   } else {
     if (b.innerHTML.length < 10) {
       b.innerHTML = `${b.innerHTML}${elem}`;
+    } else {
+      alert("You can't enter more than 10 number");
     }
   }
 }
