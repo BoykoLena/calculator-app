@@ -12,7 +12,6 @@ function writeNumber(elem) {
     } else {
       alert("You can't enter more than 10 number");
     }
-    console.log(a.innerHTML.length);
   } else {
     if (b.innerHTML.length < 10) {
       b.innerHTML = `${b.innerHTML}${elem}`;
@@ -106,18 +105,33 @@ function equals() {
     equalSign.innerHTML = "=";
     if (action.innerHTML === "+") {
       results.innerHTML = a + b;
+      if (results.innerHTML.length > 15) {
+        results.innerHTML = results.innerHTML.substring(0, 15);
+      }
     }
     if (action.innerHTML === "% *") {
       results.innerHTML = (b / 100) * a;
+      if (results.innerHTML.length > 15) {
+        results.innerHTML = results.innerHTML.substring(0, 15);
+      }
     }
     if (action.innerHTML === "/") {
       results.innerHTML = a / b;
+      if (results.innerHTML.length > 15) {
+        results.innerHTML = results.innerHTML.substring(0, 15);
+      }
     }
     if (action.innerHTML === "*") {
       results.innerHTML = a * b;
+      if (results.innerHTML.length > 15) {
+        results.innerHTML = results.innerHTML.substring(0, 15);
+      }
     }
     if (action.innerHTML === "-") {
       results.innerHTML = a - b;
+      if (results.innerHTML.length > 15) {
+        results.innerHTML = results.innerHTML.substring(0, 15);
+      }
     }
   }
 }
