@@ -1,0 +1,55 @@
+body {
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.container {
+  background-color: #ececec;
+  border: 0.5px solid #385170;
+  border-radius: 20px;
+  padding: 10px 10px 5px;
+  color: #385170;
+}
+
+.calculation {
+  height: 95px;
+  border: 0.3px solid #385170;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.results {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+}
+
+#action,
+#equalSign {
+  margin: auto 5px;
+}
+
+.row {
+  margin: 10px auto;
+}
+
+.button {
+  border: 1.5px solid #385170;
+  border-radius: 50%;
+  text-align: center;
+  padding: 12px 7px;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #385170;
+  color: #ececec;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 10px;
+  text-align: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea231fe2eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculation">
+        <div class="variables">
+          <span id="firstVariable"></span><span id="action"></span
+          ><span id="secondVariable"></span>
+          <span id="equalSign"></span>
+        </div>
+        <div id="results" class="results"></div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="button" id="delete" onclick="deleteAll()">AC</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="delete_one" onclick="deleteLeft()">
+            <i class="fa-solid fa-delete-left"></i>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="percent" onclick="percent()">%</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="divide" onclick="divide()">
+            <i class="fa-solid fa-divide"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="button" id="seven" onclick="writeNumber(7)">7</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="eight" onclick="writeNumber(8)">8</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="nine" onclick="writeNumber(9)">9</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="multiply" onclick="multiply()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="button" id="four" onclick="writeNumber(4)">4</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="five" onclick="writeNumber(5)">5</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="six" onclick="writeNumber(6)">6</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="minus" onclick="minus()">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="button" id="one" onclick="writeNumber(1)">1</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="two" onclick="writeNumber(2)">2</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="three" onclick="writeNumber(3)">3</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="plus" onclick="plus()">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="button" id="plus_minus" onclick="plusMinus()">
+            <i class="fa-solid fa-plus-minus"></i>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="zero" onclick="writeNumber(0)">0</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="dote" onclick="writeNumber(`.`)">.</div>
+        </div>
+        <div class="col-3">
+          <div class="button" id="equal" onclick="equals()">
+            <i class="fa-solid fa-equals"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Codded by Boyko Elena</div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
