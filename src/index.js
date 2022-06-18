@@ -7,9 +7,14 @@ let minusSing = "-";
 
 function writeNumber(elem) {
   if (typeof a != "number") {
-    a.innerHTML = `${a.innerHTML}${elem}`;
+    if (a.innerHTML.length < 10) {
+      a.innerHTML = `${a.innerHTML}${elem}`;
+    }
+    console.log(a.innerHTML.length);
   } else {
-    b.innerHTML = `${b.innerHTML}${elem}`;
+    if (b.innerHTML.length < 10) {
+      b.innerHTML = `${b.innerHTML}${elem}`;
+    }
   }
 }
 
